@@ -84,7 +84,7 @@ function App() {
     main?.addEventListener("mousemove", function (e) {
       const xMove = (e.clientX / window.innerWidth - 0.5) * 40;
       gsap.to(".main .text", {
-        x: `${xMove * 0.4}vw`,
+        x: `${xMove * 0.4}%`,
       });
 
       gsap.to(".sky", {
