@@ -72,13 +72,6 @@ function App() {
       ease: "Expo.easeInOut",
     })
 
-    gsap.to(".text", {
-      scale: 1,
-      rotate: 0,
-      duration: 2,
-      delay: "-.8",
-    })
-
     const main = document.querySelector(".main")
 
     main?.addEventListener("mousemove", function (e) {
@@ -132,7 +125,7 @@ function App() {
               <img className='sky scale-[1.5] rotate-[-20deg] w-full h-full object-cover absolute top-0 left-0' src="./sky.png" alt="" />
               <img className='bg scale-[1.8] rotate-[-3deg] w-full h-full object-cover absolute top-0 left-0' src="./bg.png" alt="" />
 
-              <div className='text text-white flex flex-col gap-2 absolute top-5 left-1/2 -translate-x-1/2 scale-[1] rotate-[-10deg]'>
+              <div className='text text-white flex flex-col gap-2 absolute top-5 left-1/2 -translate-x-1/2'>
                 <h1 className='text-[6.5rem] leading-none -ml-30'>grand</h1>
                 <h1 className='text-[6.5rem] leading-none ml-10'>theft</h1>
                 <h1 className='text-[6.5rem] leading-none -ml-30'>auto</h1>
